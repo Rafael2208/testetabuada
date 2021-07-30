@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+    
+    <div id="output"></div>
+
+
+<script>
+
+
+function mostrarTabuada () {
+var n = prompt("digite um número");
+limparTabuada();
+n = parseFloat(n);
+
+var i = 1;
+while (i <= 100) {
+  mensagem +=  n + 'x' + i + '=' + (n * i) + '<br>';
+   i++;
+}
+output.innerHTML = mensagem;
+}
+function limparTabuada(){
+mensagem = " ";
+output.innerHTML = mensagem;
+}
+
+var  output  = document.querySelector("#output");
+var mensagem = " ";
+
+
+</script>
+
+</body>
+</html>
